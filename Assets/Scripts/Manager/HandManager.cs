@@ -48,7 +48,6 @@ public class HandManager : MonoBehaviour
         foreach (Plant plant in plantPrefabList)
         {
             if (plant.plantType == plantType) { return plant; }
-            
         }
         return null;
     }

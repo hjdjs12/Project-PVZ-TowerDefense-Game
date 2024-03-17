@@ -1,6 +1,3 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 enum CardState
@@ -17,7 +14,7 @@ public enum PlantType
 }
 public class Card : MonoBehaviour
 {
-    
+
     //冷却，可以被点击  不可用
     private CardState cardState = CardState.Cooling;
     public PlantType plantType = PlantType.Sunflower;
@@ -58,23 +55,23 @@ public class Card : MonoBehaviour
     {
         cdTimer += Time.deltaTime;
         cardMask.fillAmount = (cdTime - cdTimer) / cdTime;
-        
-        if(cdTimer >= cdTime)
+
+        if (cdTimer >= cdTime)
         {
             TransitionToWaitingSun();
         }
     }
     void ReadyUpdate()
     {
-        if(needSunPoint > SunManager.Instance.SunPoint)
+        if (needSunPoint > SunManager.Instance.SunPoint)
         {
-            TransitionToWaitingSun() ;
+            TransitionToWaitingSun();
         }
 
     }
     void WaitingSunUpdate()
     {
-        if(needSunPoint <= SunManager.Instance.SunPoint)
+        if (needSunPoint <= SunManager.Instance.SunPoint)
         {
             TransitionToReady();
         }
@@ -108,7 +105,8 @@ public class Card : MonoBehaviour
 
         //TODO:消耗阳光值，并进行种植
         bool isSuccess = HandManager.Instance.AddPlant(plantType);
-        if (isSuccess) {
+        if (isSuccess)
+        {
             SunManager.Instance.SubSun(needSunPoint);
 
             TransitionToCooling();

@@ -9,7 +9,7 @@ public class SunFlower : Plant
     private Animator anim;
     public GameObject sunPrefab;
     public float jumpMinDistance = 0.3f;
-    public float jumpMaxDistance = 2;
+    public float jumpMaxDistance = 1;
     public void ProduceSun()
     {
         GameObject go = GameObject.Instantiate(sunPrefab,transform.position,Quaternion.identity);
@@ -17,6 +17,7 @@ public class SunFlower : Plant
         distance = Random.Range(0, 2) < 1 ? distance : -distance ;
         Vector3 position = transform.position;
         position.x += distance;
+        position.z = -1;
         go.GetComponent<Sun>().JumpTo(position);
     }
     protected override void EnableUpdate()
@@ -33,5 +34,6 @@ public class SunFlower : Plant
     {
         anim = GetComponent<Animator>();
     }
+
 
 }
