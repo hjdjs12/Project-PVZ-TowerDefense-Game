@@ -1,0 +1,515 @@
+Using pre-set license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.17f1c1 (a01dafa986ec) revision 10493359'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 14020 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\unity_file\2022.3.17f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/unity_file/PVZ
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+54722
+Successfully changed project path to: D:/unity_file/PVZ
+D:/unity_file/PVZ
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [25512] Host "[IP] 2.0.0.1 [Port] 0 [Flags] 2 [Guid] 3879751178 [EditorId] 3879751178 [Version] 1048832 [Id] WindowsEditor(7,¹ÂÓÂÕß) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [25512] Host "[IP] 2.0.0.1 [Port] 0 [Flags] 2 [Guid] 3879751178 [EditorId] 3879751178 [Version] 1048832 [Id] WindowsEditor(7,¹ÂÓÂÕß) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
+Refreshing native plugins compatible for Editor in 29.86 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.17f1c1 (a01dafa986ec)
+[Subsystems] Discovering subsystems at path D:/unity_file/2022.3.17f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/unity_file/PVZ/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Graphics (ID=0x1681)
+    Vendor:   ATI
+    VRAM:     7010 MB
+    Driver:   31.0.21024.2004
+Initialize mono
+Mono path[0] = 'D:/unity_file/2022.3.17f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/unity_file/2022.3.17f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/unity_file/2022.3.17f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56536
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/unity_file/2022.3.17f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/unity_file/2022.3.17f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.010222 seconds.
+- Loaded All Assemblies, in  0.345 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.245 seconds
+Domain Reload Profiling: 585ms
+	BeginReloadAssembly (116ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (112ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (120ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (106ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (245ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (195ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (134ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.693 seconds
+Refreshing native plugins compatible for Editor in 9.06 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.576 seconds
+Domain Reload Profiling: 1262ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (440ms)
+		LoadAssemblies (364ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (172ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (127ms)
+			ScanForSourceGeneratedMonoScriptInfo (20ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (426ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (74ms)
+			ProcessInitializeOnLoadAttributes (294ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 9.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 72 unused Assets / (244.5 KB). Loaded Objects now: 4545.
+Memory consumption went from 150.2 MB to 150.0 MB.
+Total: 3.642000 ms (FindLiveObjects: 0.368600 ms CreateObjectMapping: 0.152200 ms MarkObjects: 2.851700 ms  DeleteObjects: 0.268000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 18385.707551 seconds.
+  path: Assets/Images/Zombies/Zombie/LostHead/ZombieHead_6.png
+  artifactKey: Guid(d6458bbdf52f7d94bb03823173d64a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/LostHead/ZombieHead_6.png using Guid(d6458bbdf52f7d94bb03823173d64a41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30aa57dae1fb15d907043cfefdbc2ad6') in 0.077943 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 7.497051 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_2.png
+  artifactKey: Guid(769261c5f0db5894d886b72f1504da12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_2.png using Guid(769261c5f0db5894d886b72f1504da12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8cfc0a3eec3257085ddb6df2dd41e6') in 0.008865 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.317918 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_3.png
+  artifactKey: Guid(668a0a47737407242ad254f8965c3a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_3.png using Guid(668a0a47737407242ad254f8965c3a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e455620b624c8d127dbd1aedc05c305') in 0.008688 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.573134 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_4.png
+  artifactKey: Guid(56b4bca96d992604dabc0efddd192b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_4.png using Guid(56b4bca96d992604dabc0efddd192b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '175572a7e35bfc09e21c8fe56e81c9d9') in 0.007947 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.184073 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_5.png
+  artifactKey: Guid(3a9117c8e2c01024bb93699dc11a652c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_5.png using Guid(3a9117c8e2c01024bb93699dc11a652c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb61f5a2672e84721def5e19b80b817c') in 0.008132 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.305881 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_6.png
+  artifactKey: Guid(b8a45435e3a633040826743ba8137e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_6.png using Guid(b8a45435e3a633040826743ba8137e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3a7d4f66caf3447211dec02f74b5dd') in 0.008987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.231813 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_7.png
+  artifactKey: Guid(51188b2c7d2795f479ddba3f9efb75e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_7.png using Guid(51188b2c7d2795f479ddba3f9efb75e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d720432f0e500916322141a3ce76cb9') in 0.008891 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.280127 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_8.png
+  artifactKey: Guid(f32259530bd94e94a90c417f1bc005a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_8.png using Guid(f32259530bd94e94a90c417f1bc005a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d620447ece3cffb5a0055f82d00a32') in 0.008905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.224531 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_9.png
+  artifactKey: Guid(bbf6e6319c8f8da4eb699df2daf51495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_9.png using Guid(bbf6e6319c8f8da4eb699df2daf51495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11602428a93c596a514c495a32a9020d') in 0.009232 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.201203 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_10.png
+  artifactKey: Guid(c7d3aa55561235841a14fdf450a763c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_10.png using Guid(c7d3aa55561235841a14fdf450a763c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ff762e7b7cfa7c785372b5ab58a9da6') in 0.008396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.645436 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_11.png
+  artifactKey: Guid(c29b2f85a3f11b24984cbc4adfe157dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_11.png using Guid(c29b2f85a3f11b24984cbc4adfe157dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12ad56d8356338547b2f3d898f1f7870') in 0.009375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.429756 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_12.png
+  artifactKey: Guid(6b04fbfc165bc3d4eb6e776b69981720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_12.png using Guid(6b04fbfc165bc3d4eb6e776b69981720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f37aa961f96a1a80244a1678e004069a') in 0.007783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.350740 seconds.
+  path: Assets/Images/Plants/Peashooter/Peashooter_13.png
+  artifactKey: Guid(d0f069f3097121746afec1ef87799932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Plants/Peashooter/Peashooter_13.png using Guid(d0f069f3097121746afec1ef87799932) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a147e07286d951c7ff57058b64a16f4') in 0.008256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 16.465331 seconds.
+  path: Assets/Images/Zombies/Zombie/LostHead
+  artifactKey: Guid(dfc2e6416ccf2ef4f9a46b2d1c396851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/LostHead using Guid(dfc2e6416ccf2ef4f9a46b2d1c396851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e57b9182f1c6f94aa43f5dee4a90facb') in 0.000910 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.677112 seconds.
+  path: Assets/Images/Zombies/Zombie/Eat/ZombieAttack_2.png
+  artifactKey: Guid(96d48458457b64541ab7d05823f58f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Eat/ZombieAttack_2.png using Guid(96d48458457b64541ab7d05823f58f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f91f062292c569c2e7a51882740ce934') in 0.009565 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 14.804119 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_5.png
+  artifactKey: Guid(5b9e9e3dc39304e458ebb3b1cbf1c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_5.png using Guid(5b9e9e3dc39304e458ebb3b1cbf1c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31a2ebe13c5e3249e9cb0721b1c9ffa') in 0.010818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.166392 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_6.png
+  artifactKey: Guid(7176a0d829e720649806682ea1c9812e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_6.png using Guid(7176a0d829e720649806682ea1c9812e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2af57ecd941ea8f8fea9eedf1ca39fa9') in 0.011457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.156866 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_7.png
+  artifactKey: Guid(bd137ba212f24044099d6dc58727ccc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_7.png using Guid(bd137ba212f24044099d6dc58727ccc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a5b36b0af7931ea012ef2756dc28bd7') in 0.008422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.154861 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_8.png
+  artifactKey: Guid(c63a40f07a0614a41a3382e47140682d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_8.png using Guid(c63a40f07a0614a41a3382e47140682d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6870e8b91d7df67df893ef3f1ca57136') in 0.009332 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.147377 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_9.png
+  artifactKey: Guid(e2241cfcc3735a74296f267ad8ef12fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_9.png using Guid(e2241cfcc3735a74296f267ad8ef12fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c61c996b6095c9a1078798cc1a69906') in 0.009100 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.155898 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_10.png
+  artifactKey: Guid(6adc38645c950d84f9017eecc628d460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_10.png using Guid(6adc38645c950d84f9017eecc628d460) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5414fa2515326cbcec1ec01641d32784') in 0.009633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.142162 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_11.png
+  artifactKey: Guid(871e16a71099ee34d94e8dfe2931bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_11.png using Guid(871e16a71099ee34d94e8dfe2931bfa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae519873c83061deb4e7b98efca50e56') in 0.009600 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.146214 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_12.png
+  artifactKey: Guid(2dba37763545e4b4697cdf23f8b7ceeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_12.png using Guid(2dba37763545e4b4697cdf23f8b7ceeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dd6d5bc5e5fc0919359c2d12bf00c9a') in 0.008274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.149219 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_13.png
+  artifactKey: Guid(bee3ac4c6a906684db272325371bce03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_13.png using Guid(bee3ac4c6a906684db272325371bce03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d30b5cc3378de166a22a809f511d196') in 0.009018 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.139765 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_14.png
+  artifactKey: Guid(d5c6182f56715244ba696892514a7aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_14.png using Guid(d5c6182f56715244ba696892514a7aac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b31709cbcc2ea9229e5673070dc3cc') in 0.008731 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.145826 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_15.png
+  artifactKey: Guid(fd7ed31166b0efa4c9ce79184443b02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_15.png using Guid(fd7ed31166b0efa4c9ce79184443b02e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '299de56106b19f7e65e1898cca808787') in 0.009043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.159034 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_16.png
+  artifactKey: Guid(34a9c1de503e43f458ac55c3b9df745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_16.png using Guid(34a9c1de503e43f458ac55c3b9df745d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9fa0ec04c5fe5e0aaf763006755812') in 0.009696 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.154825 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_17.png
+  artifactKey: Guid(c9a54cb0ec183b147937b2c3becbe29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_17.png using Guid(c9a54cb0ec183b147937b2c3becbe29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9556bde47bf91140fa3ee7fd01bfb4fa') in 0.008996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.140092 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_18.png
+  artifactKey: Guid(9da959100fa8b8249bd26b6f737fce17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_18.png using Guid(9da959100fa8b8249bd26b6f737fce17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb15c3b372c156721871dccf2453b6b3') in 0.008904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.168703 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_19.png
+  artifactKey: Guid(1b9e5001d145a214197d3211b45ffd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_19.png using Guid(1b9e5001d145a214197d3211b45ffd50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49a842f340846d0ec82c135395f6eed') in 0.010181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.153556 seconds.
+  path: Assets/Images/Zombies/Zombie/Move1/Zombie2_20.png
+  artifactKey: Guid(51f8d966c000253468fe3d4e8aa1f39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/Move1/Zombie2_20.png using Guid(51f8d966c000253468fe3d4e8aa1f39b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2d3da53653f8953a42812324c83cce') in 0.010397 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.743824 seconds.
+  path: Assets/Images/Zombies/Zombie/LostHeadMove/ZombieLostHead_5.png
+  artifactKey: Guid(949d53d47c145cb4cb93badb1e58b688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/LostHeadMove/ZombieLostHead_5.png using Guid(949d53d47c145cb4cb93badb1e58b688) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7eb4e9cb286f5ca4c2a61653e3a7e29') in 0.009539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.533948 seconds.
+  path: Assets/Images/Zombies/Zombie/LostHeadMove/ZombieLostHead_3.png
+  artifactKey: Guid(536f5f7bb6bcc6944bbd13cf3c4fc523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/Zombies/Zombie/LostHeadMove/ZombieLostHead_3.png using Guid(536f5f7bb6bcc6944bbd13cf3c4fc523) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49b5cd1647e60309d864a148c1e54a51') in 0.010456 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.476 seconds
+Refreshing native plugins compatible for Editor in 9.10 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.260 seconds
+Domain Reload Profiling: 1727ms
+	BeginReloadAssembly (164ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (9ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (234ms)
+		LoadAssemblies (309ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (10ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1260ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (419ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (291ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (19ms)
+Refreshing native plugins compatible for Editor in 10.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4066 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 44 unused Assets / (216.9 KB). Loaded Objects now: 4560.
+Memory consumption went from 151.9 MB to 151.7 MB.
+Total: 5.059600 ms (FindLiveObjects: 0.362300 ms CreateObjectMapping: 0.519100 ms MarkObjects: 3.811800 ms  DeleteObjects: 0.364400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
