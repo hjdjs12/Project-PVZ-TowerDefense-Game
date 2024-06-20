@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏后端演示</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.4.0/jquery.js"></script>
+    <script>
+        <!--JQUERY写法给按钮加事件-->
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                test1();
+            });
+
+            $("#btn2").click(function () {
+                $.test2();
+            });
+
+            $("#btn3").click(function () {
+                $.test3();
+            })
+
+            $("#btn4").click(function () {
+                $.test4();
+            })
+            $("#btn5").click(function () {
+                $.test5();
+            })
+            $("#btn6").click(function () {
+                $.test6();
+            })
+            $("#btn7").click(function () {
+                $.test7();
+            })
+            $("#btn8").click(function () {
+                $.test8();
+            })
+        })
+        function test1() {
+            $.ajax({
+                url:"/gamedata/getRankingS",
+                type:"get",
+                dataType:"json",
+                success:function (data) {
+                    $("#tabletest").find("tr").remove();
+                    tr="<td>Username</td><td>Record</td><td>Date</td>"
+                    $("#tabletest").append("<tr>" + tr + "</tr>")
+                    // 方法中传入的参数data为后台获取的数据
+                    for (i in data) {
+                        var tr;
+                        tr = "<td>" + data[i].username + "</td>" + "<td>" + data[i].record + "</td>" + "<td>" + data[i].date + "</td>"
+                        $("#tabletest").append("<tr>" + tr + "</tr>")
+                    }
+                }
+            })
+        }
+        // JQUERY的函数写法，开头用$符号
+        $.test2 = function () {
+            $.ajax({
+                url:"/gamedata/getRankingL",
+                type:"get",
+                dataType:"json",
+                success:function (data) {
+                    $("#tabletest").find("tr").remove();
+                    tr="<td>Username</td><td>Record</td><td>Energy Left</td>"
+                    $("#tabletest").append("<tr>" + tr + "</tr>")
+                    // 方法中传入的参数data为后台获取的数据
+                    for (i in data) {
+                        var tr;
+                        tr = "<td>" + data[i].username + "</td>" + "<td>" + data[i].record + "</td>" + "<td>" + data[i].eleft + "</td>"
+                        $("#tabletest").append("<tr>" + tr + "</tr>")
+                    }
+                }
+            })
+        }
+        /*
+        $.test2 = function () {
+            $.ajax({
+                url: "gamedata/getByUsernameJson",
+                type: "get",
+                dataType: "json",   // 返回的数据类型
+                contentType:"application/json", // 请求传递的参数格式
+                data: {"username": $("#username").val()},
+                success:function (data) {
+                    $("#tabletest").find("tr").remove();
+                    tr="<td>Username</td><td>Password</td><td>GameRecord</td>";
+                    $("#tabletest").append("<tr>" + tr + "</tr>");
+                    var tr;
+                    tr = "<td>" + data.username + "</td>" + "<td>" + data.password + "</td>" + "<td>" + data.gamerecord + "</td>";
+                    $("#tabletest").append("<tr>" + tr + "</tr>");
+                },
+                error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("没有查询到数据！");
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        */
+        $.test3 = function () {
+            $.ajax({
+                url:"gamedata/getDataIndS",
+                // 疑惑点若设置为 type:"post" 会报错 HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+                type: "get",
+                dataType: "json",   // 返回的数据类型
+                contentType:"application/json", // 请求传递的参数格式
+                data: {"username": $("#username").val()},
+                success:function (data) {
+                    $("#tabletest").find("tr").remove();
+                    tr="<td>Username</td><td>Record</td><td>Date</td>";
+                    $("#tabletest").append("<tr>" + tr + "</tr>");
+                    for (i in data) {
+                        var tr;
+                        tr = "<td>" + data[i].username + "</td>" + "<td>" + data[i].record + "</td>" + "<td>" + data[i].date + "</td>"
+                        $("#tabletest").append("<tr>" + tr + "</tr>")
+                    }
+                },
+                error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("没有查询到数据！");
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        $.test4 = function () {
+            $.ajax({
+                url:"gamedata/getDataIndL",
+                // 疑惑点若设置为 type:"post" 会报错 HttpRequestMethodNotSupportedException: Request method 'POST' is not supported
+                type: "get",
+                dataType: "json",   // 返回的数据类型
+                contentType:"application/json", // 请求传递的参数格式
+                data: {"username": $("#username").val()},
+                success:function (data) {
+                    $("#tabletest").find("tr").remove();
+                    tr="<td>Username</td><td>Record</td><td>Energy Left</td>";
+                    $("#tabletest").append("<tr>" + tr + "</tr>");
+                    for (i in data) {
+                        var tr;
+                        tr = "<td>" + data[i].username + "</td>" + "<td>" + data[i].record + "</td>" + "<td>" + data[i].eleft + "</td>"
+                        $("#tabletest").append("<tr>" + tr + "</tr>")
+                    }
+                },
+                error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("没有查询到数据！");
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        $.test5 = function () {
+            $.ajax({
+                url:"gamedata/setDataIndS",
+                type: "get",
+                dataType: "string",   // 返回的数据类型
+                contentType:"application/json", // 请求传递的参数格式
+                data: {"username": $("#username").val(), "record": $("#gamerecord").val(), "date": $("#recorddate").val()},
+                success:function (data) {
+                    alert(data);
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        $.test6 = function () {
+            $.ajax({
+                url:"gamedata/setDataIndL",
+                type: "get",
+                dataType: "string",   // 返回的数据类型
+                contentType:"application/json", // 请求传递的参数格式
+                data: {"username": $("#username").val(), "record": $("#gamerecord").val(), "eleft": $("#energyleft").val()},
+                success:function (data) {
+                    alert(data);
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        $.test7 = function () {
+            $.ajax({
+                url:"gamedata/verLogin",
+                type:"get",
+                dataType:"string",
+                contentType:"application/json",
+                data: {"username": $("#username").val(), "password": $("#password").val()},
+                success:function(data) {
+                    alert(data);
+                    $("#tabletest").find("tr").remove();
+                },
+                error:function (XMLHttpRequest, textStatus, errorThrown) {
+                    alert("查询的用户不存在！");
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+        $.test8 = function () {
+            $.ajax({
+                url:"gamedata/register",
+                type:"get",
+                dataType:"string",
+                contentType:"application/json",
+                data: {"username": $("#username").val(), "password": $("#password").val()},
+                success:function(data) {
+                    alert(data);
+                    $("#tabletest").find("tr").remove();
+                }
+            })
+        }
+    </script>
+    <!--CSS-->
+    <style>
+        .center {
+            margin: auto;
+            text-align: center;
+            font-size: 24px;
+            width: 60%;
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <p id="test">Springboot整合MyBatis通过Ajax查询游戏后端MySQL数据库数据</p>
+        <button id="btn1">显示排行榜（生存模式）</button>
+        <button id="btn2">显示排行榜（闯关模式）</button>
+        <button id="btn3">查询个人记录（生存模式）</button>
+        <button id="btn4">查询个人记录（闯关模式）</button>
+        <button id="btn5">插入(生存模式)</button>
+        <button id="btn6">插入(闯关模式)</button>
+        <button id="btn7">登入</button>
+        <button id="btn8">注册</button>
+        <input id="username" name="insert1" type="text" placeholder="请输入用户名">
+        <input id="password" name="password" type="text" placeholder="请输入密码">
+        <input id="gamerecord" name="insert3" type="text" placeholder="请输入要插入的游戏记录">
+        <input id="recorddate" name="insert3" type="datetime-local" placeholder="请输入游戏记录日期">
+        <input id="energyleft" name="insert3" type="text" placeholder="请输入剩余能量">
+        <br>
+        <table class="table table-bordered" id="tabletest">
+        </table>
+    </div>
+</body>
+</html>

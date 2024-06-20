@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.gameproject.gamebackend.mapper.GameDataMapper">
+    <select id="findByUsername" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT Username, Password, GameRecord from game_data WHERE Username = #{username}
+    </select>
+
+    <select id="findGameDataAll" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT Username, Password, GameRecord from game_data ORDER BY GameRecord DESC LIMIT 10
+    </select>
+
+    <insert id="setDataIndS" parameterType="com.gameproject.gamebackend.entity.GameData">
+        INSERT INTO user_records(username, record, date) VALUES (#{username}, #{record}, #{date})
+    </insert>
+
+    <insert id="setDataIndL" parameterType="com.gameproject.gamebackend.entity.GameData">
+        INSERT INTO user_recordl(username, record, eleft) VALUES (#{username}, #{record}, #{eleft})
+    </insert>
+
+    <select id="getRankingS" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT username, record, date from user_records ORDER BY record DESC, date DESC LIMIT 10
+    </select>
+
+    <select id="getRankingL" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT username, record, eleft from user_recordl ORDER BY record DESC, eleft DESC LIMIT 10
+    </select>
+
+    <select id="getDataIndS" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT username, record, date from user_records WHERE username = #{username} ORDER BY record DESC, date DESC
+    </select>
+
+    <select id="getDataIndL" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT username, record, eleft from user_recordl WHERE username = #{username} ORDER BY record DESC, eleft DESC
+    </select>
+
+    <select id="verLogin" resultType="com.gameproject.gamebackend.entity.GameData">
+        SELECT password from user_pass WHERE username = #{username}
+    </select>
+
+    <insert id="register" parameterType="com.gameproject.gamebackend.entity.GameData">
+        INSERT INTO user_pass(username, password, email, phone) VALUES (#{username}, #{password}, #{email}, #{phone})
+    </insert>
+
+    <select id="isExisted" parameterType="com.gameproject.gamebackend.entity.GameData">
+        SELECT EXISTS(SELECT * from user_pass WHERE username = #{username})
+    </select>
+</mapper>

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5ac6b4a2ef7c6143aae3fadb6c79e3b, type: 3}
+  m_Name: WeaponInfo
+  m_EditorClassIdentifier: 
+  weaponInfoList:
+  - weaponId: 0
+    weaponName: Tower
+    description: Base for weapon
+    cardPrefab: {fileID: 1997963206847846413, guid: 40e4128c042ee1340901bb51f652bc94, type: 3}
+  - weaponId: 1
+    weaponName: Cannon
+    description: Attack 3 targets simultaneously
+    cardPrefab: {fileID: 1040789965684447060, guid: accc9f1dd3ca7bb408d83ea68eda23b0, type: 3}
+  - weaponId: 2
+    weaponName: MG
+    description: Fastest attacking speed
+    cardPrefab: {fileID: 7822766616810109109, guid: 2292f1b3f145f2341bff7861cd1b2018, type: 3}
+  - weaponId: 3
+    weaponName: Missle
+    description: Cause highest damage to a single target
+    cardPrefab: {fileID: 4773580532751025202, guid: 9d004dc04d4c9ff4291eddbcc1d28c12, type: 3}
+  - weaponId: 4
+    weaponName: Fire Shooter
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 2943625952999228906, guid: abcb038de0c80b948b733a446df12529, type: 3}
+  - weaponId: 5
+    weaponName: Bounce
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 8727833079731700752, guid: 68691a87efef3054abc91a89700381f8, type: 3}
+  - weaponId: 6
+    weaponName: Base for weapon
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 3600817180532772948, guid: aea09f2727d685b47a8e87a9cabfd26b, type: 3}
+  - weaponId: 7
+    weaponName: CardCannonLinear1
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 4717515551701549414, guid: d05acfb3bbc977748bb64816823720ea, type: 3}
+  - weaponId: 8
+    weaponName: CardFreeze1
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 1836557316724747662, guid: 5c93c3dc910caf84c887c60fd125fb21, type: 3}
+  - weaponId: 9
+    weaponName: CardCircle1
+    description: Continuous but minimal damage to target in given area
+    cardPrefab: {fileID: 8755783553702735475, guid: 4f030025480aa9249a6e377f31842f2e, type: 3}
